@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:hsl(230,25%,7%);--fg:hsl(0,0%,95%);--card:hsl(230,20%,10%);--card-fg:hsl(0,0%,95%);--primary:hsl(47,90%,61%);--primary-fg:hsl(230,25%,7%);--secondary:hsl(230,15%,15%);--secondary-fg:hsl(0,0%,90%);--muted:hsl(230,15%,18%);--muted-fg:hsl(230,10%,55%);--border:hsl(230,15%,18%);--green:hsl(145,70%,50%);--red:hsl(0,75%,55%);--radius:0.75rem}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--fg);font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased;line-height:1.5}
+h1,h2,h3,h4,h5,h6{font-family:'Space Grotesk',sans-serif}
+.text-gold{background:linear-gradient(135deg,hsl(47,90%,61%),hsl(37,100%,70%));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.glow-gold{box-shadow:0 0 40px -10px hsl(47,90%,61%,0.4)}
+.bg-grid{background-image:linear-gradient(hsl(230,15%,18%,0.5) 1px,transparent 1px),linear-gradient(90deg,hsl(230,15%,18%,0.5) 1px,transparent 1px);background-size:60px 60px}
+.container{max-width:1200px;margin:0 auto;padding:0 1.5rem}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeInLeft{from{opacity:0;transform:translateX(-30px)}to{opacity:1;transform:translateX(0)}}
+@keyframes fadeInRight{from{opacity:0;transform:translateX(30px)}to{opacity:1;transform:translateX(0)}}
+.animate-float{animation:float 4s ease-in-out infinite}
+.animate-in-up{animation:fadeInUp 0.7s ease forwards}
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--muted);border-radius:3px}
+
+/* ── Shared Form Styles ── */
+.input-group {
+  display: flex; align-items: center; gap: 8px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: var(--secondary);
+  border: 1px solid var(--border);
+  transition: border-color 0.2s;
+}
+.input-group:focus-within { border-color: hsl(47,90%,61%,0.5); }
+.input-group input {
+  background: none; border: none; outline: none;
+  flex: 1; font-size: 14px; color: var(--fg); font-family: inherit;
+}
+
+/* Spinner for loading buttons */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+@keyframes fadeIn {
+  from { opacity:0; } to { opacity:1; }
+}

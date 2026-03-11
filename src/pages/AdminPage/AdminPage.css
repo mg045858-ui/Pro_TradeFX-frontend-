@@ -1,0 +1,125 @@
+.ap {
+  min-height: 100dvh;
+  background: hsl(225,20%,8%);
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+.ap__header {
+  height: 60px;
+  background: hsl(225,22%,11%);
+  border-bottom: 1px solid hsl(225,15%,16%);
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  gap: 12px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+.ap__body {
+  flex: 1;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 24px 20px 60px;
+}
+.ap__stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-bottom: 24px;
+}
+.ap__stat-card {
+  background: hsl(225,22%,13%);
+  border: 1px solid hsl(225,15%,18%);
+  border-radius: 12px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.ap__stat-icon { font-size: 28px; flex-shrink: 0; }
+.ap__stat-val  { font-family: 'Space Grotesk', sans-serif; font-weight: 800; font-size: 22px; }
+.ap__stat-label{ font-size: 12px; color: hsl(230,10%,50%); margin-top: 2px; }
+.ap__tab-body { display: flex; flex-direction: column; gap: 0; }
+.ap__table-wrap {
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 1px solid hsl(225,15%,18%);
+}
+.ap__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.ap__table thead th {
+  padding: 13px 16px;
+  text-align: left;
+  background: hsl(225,22%,13%);
+  color: hsl(230,10%,50%);
+  font-weight: 700;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .6px;
+  border-bottom: 1px solid hsl(225,15%,18%);
+  white-space: nowrap;
+}
+.ap__table tbody tr {
+  border-bottom: 1px solid hsl(225,15%,16%);
+  transition: background 0.15s;
+}
+.ap__table tbody tr:hover { background: hsl(225,20%,13%); }
+.ap__table tbody td {
+  padding: 13px 16px;
+  vertical-align: middle;
+}
+.ap__action-btn {
+  padding: 5px 12px;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: all 0.15s;
+}
+.ap__action-btn--green { background: hsl(145,60%,40%,0.14); color: hsl(145,60%,65%); border: 1px solid hsl(145,60%,40%,0.3); }
+.ap__action-btn--green:hover { background: hsl(145,60%,40%,0.25); }
+.ap__action-btn--blue  { background: hsl(210,80%,55%,0.12); color: hsl(210,80%,70%); border: 1px solid hsl(210,80%,55%,0.3); }
+.ap__action-btn--blue:hover  { background: hsl(210,80%,55%,0.22); }
+.ap__action-btn--red   { background: hsl(0,70%,50%,0.12); color: hsl(0,70%,65%); border: 1px solid hsl(0,70%,50%,0.3); }
+.ap__action-btn--red:hover   { background: hsl(0,70%,50%,0.22); }
+/* Modal */
+.ap__modal-overlay {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,0.75);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 9999; padding: 20px;
+  animation: fadeIn 0.2s;
+}
+.ap__modal {
+  background: hsl(225,22%,13%);
+  border: 1px solid hsl(225,15%,22%);
+  border-radius: 18px;
+  width: 100%; max-width: 440px;
+  animation: popIn 0.25s cubic-bezier(0.34,1.56,0.64,1);
+}
+.ap__modal-header {
+  padding: 20px 20px 16px;
+  border-bottom: 1px solid hsl(225,15%,18%);
+  display: flex; justify-content: space-between; align-items: flex-start;
+}
+.ap__modal-body { padding: 20px; }
+@keyframes fadeIn { from{opacity:0} to{opacity:1} }
+@keyframes popIn  { from{transform:scale(0.7);opacity:0} to{transform:scale(1);opacity:1} }
+@keyframes spin   { to{transform:rotate(360deg)} }
+@media (max-width: 768px) {
+  .ap__stats { grid-template-columns: 1fr 1fr; }
+  .ap__body  { padding: 16px 12px 40px; }
+}

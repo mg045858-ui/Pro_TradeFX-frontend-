@@ -1,0 +1,33 @@
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 4rem 0;
+}
+.footer__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px,1fr));
+  gap: 32px;
+  margin-bottom: 48px;
+}
+.footer__brand-logo {
+  display: flex; align-items: center; gap: 8px;
+  text-decoration: none; color: inherit;
+  margin-bottom: 12px;
+}
+.footer__brand-text { font-family: 'Space Grotesk',sans-serif; font-weight:700; font-size:18px; }
+.footer__brand-desc { font-size:13px; color:var(--muted-fg); }
+
+.footer__col-title { font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:13px; margin-bottom:16px; }
+.footer__col-list  { list-style:none; display:flex; flex-direction:column; gap:10px; }
+.footer__col-link  { font-size:13px; color:var(--muted-fg); text-decoration:none; transition:color 0.2s; }
+.footer__col-link:hover { color:var(--fg); }
+
+.footer__bottom {
+  border-top: 1px solid var(--border);
+  padding-top: 24px;
+  display: flex; flex-wrap:wrap;
+  justify-content: space-between; gap:16px;
+}
+.footer__copy, .footer__risk {
+  font-size:12px; color:var(--muted-fg);
+}
+.footer__risk { max-width:480px; text-align:right; }
