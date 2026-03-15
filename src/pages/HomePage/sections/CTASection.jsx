@@ -47,7 +47,7 @@ export function CTASection({ onNavigate }) {
             <button className="hp-btn-primary" style={{ fontSize:".94rem", padding:"14px 34px" }} onClick={() => onNavigate?.("register")}>
               Open Free Account →
             </button>
-            <a href="https://wa.me/919876543210?text=Hello,+I+want+to+start+trading" target="_blank" rel="noopener noreferrer" className="hp-btn-outline" style={{ fontSize:".94rem", padding:"13px 28px" }}>
+            <a href="https://wa.me/+13654353124?text=Hello,+I+want+to+start+trading" target="_blank" rel="noopener noreferrer" className="hp-btn-outline" style={{ fontSize:".94rem", padding:"13px 28px" }}>
               💬 WhatsApp Expert First
             </a>
           </div>

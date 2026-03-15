@@ -38,7 +38,7 @@ export function WhatsAppFloat() {
           animation:"hp-ring 2.6s ease-out infinite"
         }}/>
         <a
-          href="https://wa.me/919876543210?text=Hello,+I+need+free+trading+expert+analysis"
+          href="https://wa.me/+2250779718377?text=Hello,+I+need+free+trading+expert+analysis"
           target="_blank" rel="noopener noreferrer"
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}

@@ -2,17 +2,17 @@ import React from "react";
 
 const ACCOUNTS = [
   {
-    icon:"⭐", name:"Starter", price:"$10", minLabel:"Minimum Deposit", yield:"Up to 85% profit",
+    icon:"⭐", name:"Starter", price:"₹830", minLabel:"Minimum Deposit", yield:"Up to 85% profit",
     hot:false, btnStyle:"outline",
     features:["70+ Trading Assets","30-Min Profit System","Free $10K Demo Account","24/5 Live Chat Support","iOS & Android App"],
   },
   {
-    icon:"👑", name:"Gold", price:"$500", minLabel:"Minimum Deposit", yield:"Up to 90% profit",
+    icon:"👑", name:"Gold", price:"₹50000", minLabel:"Minimum Deposit", yield:"Up to 90% profit",
     hot:true, btnStyle:"primary",
     features:["All Starter Features","Personal Expert Analyst","WhatsApp Trade Signals","Priority Withdrawals","Capital Insurance","3 Free Risk-Free Trades"],
   },
   {
-    icon:"💎", name:"VIP Elite", price:"$2K", minLabel:"Minimum Deposit", yield:"Up to 95% profit",
+    icon:"💎", name:"VIP Elite", price:"₹200000", minLabel:"Minimum Deposit", yield:"Up to 95% profit",
     hot:false, btnStyle:"outline",
     features:["All Gold Features","Dedicated Fund Manager","VIP 24/7 Hotline","Private Trading Room","10% Monthly Cashback","Full Trade Insurance"],
   },

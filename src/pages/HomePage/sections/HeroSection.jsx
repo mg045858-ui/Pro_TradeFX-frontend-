@@ -36,7 +36,7 @@ export function HeroSection({ onNavigate }) {
       {/* BG Image */}
       <div style={{
         position:"absolute", inset:0,
-        backgroundImage:"url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1600&q=80')",
+        backgroundImage:"url('https://imgs.search.brave.com/39yPSgrypLStAYsjiP33Vd7ymTmA1I1otB49Du1uf9s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTI3/MTEzMTUwMC92ZWN0/b3IvYml0Y29pbnMt/Y3J5cHRvLWN1cnJl/bmN5LWNvbmNlcHQu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PXYteE1tNHJXQlRG/cjl6cjllMllLaERY/Z1BhdTJ0UC05dUF4/Skw3c2trTEU9')",
         backgroundSize:"cover", backgroundPosition:"center",
         filter:"brightness(.38) saturate(.7)"
       }}/>
@@ -77,7 +77,7 @@ export function HeroSection({ onNavigate }) {
             </h1>
 
             <p style={{ fontSize:"1.04rem", color:"rgba(195,200,220,.48)", lineHeight:1.85, maxWidth:458, marginBottom:34 }}>
-              No trading knowledge needed. Deposit any amount, pick an asset — our AI and live expert analysts generate real profit for you in under 30 minutes. Your capital is always safe.
+              No trading knowledge needed. Deposit any amount, pick an asset — our live expert analysts generate real profit for you in under 30 minutes. Your capital is always safe.
             </p>
 
             <div style={{ display:"flex", gap:12, flexWrap:"wrap", marginBottom:36 }}>

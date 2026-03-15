@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
 const ANALYSTS = [
-  { icon:"👨‍💼", name:"Arjun Sharma",  role:"Senior Forex Analyst",  win:"91%", exp:"5yr", wa:"919876543210?text=Hi+Arjun,+I+need+free+trading+analysis" },
-  { icon:"👩‍💼", name:"Priya Mehta",   role:"Crypto Specialist",      win:"88%", exp:"4yr", wa:"919876543211?text=Hi+Priya,+I+need+crypto+analysis" },
-  { icon:"👨‍💻", name:"Ravi Patel",    role:"Equity Analyst",         win:"93%", exp:"7yr", wa:"919876543212?text=Hi+Ravi,+I+need+stock+market+analysis" },
-  { icon:"👩‍🔬", name:"Sara Khan",     role:"Commodity Expert",       win:"89%", exp:"6yr", wa:"919876543213?text=Hi+Sara,+I+need+commodity+analysis" },
+  { icon:"👨‍💼", name:"Arjun Sharma",  role:"Senior Forex Analyst",  win:"91%", exp:"5yr", wa:"+13654353124?text=Hi+Arjun,+I+need+free+trading+analysis" },
+  { icon:"👩‍💼", name:"Priya Mehta",   role:"Crypto Specialist",      win:"88%", exp:"4yr", wa:"+13654353124?text=Hi+Priya,+I+need+crypto+analysis" },
+  { icon:"👨‍💻", name:"Ravi Patel",    role:"Equity Analyst",         win:"93%", exp:"7yr", wa:"+13654353124?text=Hi+Ravi,+I+need+stock+market+analysis" },
+  { icon:"👩‍🔬", name:"Sara Khan",     role:"Commodity Expert",       win:"89%", exp:"6yr", wa:"+13654353124?text=Hi+Sara,+I+need+commodity+analysis" },
 ];
 
 function WaIcon() {
@@ -123,7 +123,7 @@ export function ExpertSection() {
             <textarea placeholder="Any specific questions? (optional)" rows={3} style={{ ...inputStyle, resize:"none", ...(focused==="msg" ? {borderColor:"rgba(200,168,75,.28)"} : {}) }} onFocus={()=>setFocused("msg")} onBlur={()=>setFocused(null)}/>
 
             <div style={{ display:"flex", flexDirection:"column", gap:9, marginTop:4 }}>
-              <a href="https://wa.me/919876543210?text=Hello,+I+need+free+expert+trading+analysis" target="_blank" rel="noopener noreferrer" style={{
+              <a href="https://wa.me/+22579718377?text=Hello,+I+need+free+expert+trading+analysis" target="_blank" rel="noopener noreferrer" style={{
                 display:"flex", alignItems:"center", justifyContent:"center", gap:10,
                 padding:13, borderRadius:11, border:"none",
                 background:"linear-gradient(135deg,#25d366,#128c7e)",
